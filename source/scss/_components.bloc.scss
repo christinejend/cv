@@ -1,0 +1,17 @@
+.bloc{
+	&__percent{
+	display: inline;
+	color: #767676;
+	margin: 3em 5%;
+	position: absolute;
+	font-size: 1em;
+	}
+	&__title{                 /*Texte de droite*/
+	display: inline;
+	color: #222;
+	font-weight: 500;
+	margin: 1em 5%;
+	position: absolute;
+	}
+
+}

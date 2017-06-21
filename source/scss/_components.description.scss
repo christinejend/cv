@@ -1,0 +1,10 @@
+.description{
+	padding: 1.3em;
+	&__text{
+		    max-width: 62%;
+	}
+	&__title{
+		font-weight: bold;  /*Titre description*/
+	color: #444444;
+	}
+}

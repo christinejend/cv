@@ -1,0 +1,44 @@
+
+.menu__list li ul li a{  /* MENU NAV */
+  display: block;
+  font-size: 0.9em;
+  background-color: white;
+  color: black;
+
+}
+.menu__list-hover{
+  margin-top: 0.5em;
+}
+/* drop down */
+.menu__list li:hover ul{
+  display: block;
+
+}
+.menu__list li ul li a:hover{
+	font-weight: bold;
+}
+
+.sousnav {
+  position: absolute;
+  //top: 132%;
+  width: 9em;
+  display: none;
+  margin: -1em 0;
+  padding: 0;
+ background-color: white;
+  &__list{
+    padding: 1em;
+  }
+  &__img{
+    padding-right: 5%;
+  }
+}
+.nav__title{
+  color: transparent;
+}
+.title__sousnav{
+	padding: 1em;
+	margin-top: 0.7em;
+	color: red;
+	font-size: 0.8em;
+}

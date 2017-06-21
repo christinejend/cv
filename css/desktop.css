@@ -1,0 +1,749 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p{
+	line-height: 1.5;
+}
+@font-face {
+    font-family: "Glyphs";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+     url("../font/fontawesome/fontawesome-webfont.woff2") format("woff2"),
+      url("../font/fontawesome/fontawesome-webfont.woff") format("woff"),
+       url("../font/fontawesome/fontafontawesome-webfont.ttf") format("truetype"),
+        url("../font/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto/Roboto-Regular-webfont.eot');
+    src: url('../font/roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto/Roboto-Regular-webfont.woff') format('woff'),
+         url('../font/roboto/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../font/roboto/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+	/*background: url(../img/yt1.png);
+	background-size: 100%;
+	opacity: 0.8;*/
+	
+	font-family:  'robotoregular', sans-serif;
+	background-color: $fond;
+
+
+	
+}
+
+.hidden{
+	display: none;
+}
+
+
+.corps{          /*"centrer" tous*/
+	margin: 4em 12.5%;
+	width: 50.5%;
+}
+.description__text {
+	padding: 1em;
+	width: 75%;
+
+}
+header, footer{                  /*Style menu et footer*/
+	background: #FFFFFF repeat scroll 0 0;
+	border: 1px solid #e8e8e8;
+	z-index: 50;
+}
+header{
+	top: 0em;
+	position: fixed;
+	width: 100%;
+	height: 3em;
+}
+header h1{							/*Logo Youtube HautGauche*/
+	margin-left: 10%;
+    color: transparent;
+
+}
+.bouton__co{     /*Position bouton Mettre en Ligne - Connexion*/
+	padding: 0.5em;
+	background-color: #126DB3;
+	color:  white;
+	border: 1px solid #D3D3D3;
+	border-radius: 2px;
+	font-size: 0.8em;
+}
+.bouton__online{
+		font-size: 0.8em;
+	padding: 0.5em;
+	background-color: white;
+	color:  #7C7C7C;
+	border: 1px solid #D3D3D3;
+	border-radius: 2px;
+	margin-right: 5.3%;
+}
+#musique{								/*Input de la barre de recherche*/
+	background: transparent none repeat scroll 0 0;
+    padding: 0.5em 2%;
+	width: 231%;
+	z-index: 1;
+	border: 1px solid #d3d3d3;
+	background: #FFFFFF repeat scroll 0 0;
+}
+.banner__menu{
+	margin-top: 1em;
+}
+.Isearch{
+	background-image: url(../img/search.png);
+	background-position: 1em 45%;
+	background-size: 2.5em 71%;
+	background-repeat: no-repeat;
+    height: 2.3em;
+    width: 5em;
+	position: absolute;
+	right: -151%;
+	top: 5.05em;
+	z-index: 10;
+    border: none;
+}
+#ajout::before{
+  	content: "";
+  	font-family: 'Glyphs';
+  	font-size: 1.6em; 
+}
+#ajout:active::after{
+	content: " ma liste d'employé";
+	font-family:  'robotoregular', sans-serif;
+	font-size: 1.2em;
+}
+
+#jaime::before{
+	content: "";
+  	font-family: 'Glyphs';
+  	font-size: 1.6em; 
+}
+#jaimepas::before{
+	content: "";
+  	font-family: 'Glyphs';
+  	font-size: 1.6em; 
+}
+
+#share::before{
+	
+	content: "  ";
+  	font-family: 'Glyphs';
+  	font-size: 1.6em; 
+}
+#option::before{
+	
+	content: "  ";
+  	font-family: 'Glyphs';
+  	font-size: 0.7em; 
+}
+
+.infos__menu::before{
+	content: "  ";
+  	font-family: 'Glyphs';
+  	font-size: 1.2em;
+}
+
+#fr::before{
+	content: "  ";
+  	font-family: 'Glyphs';
+  	font-size: 1em;
+}
+#fr::after, #pays::after, #mode::after{
+	content: "    ";
+  	font-family: 'Glyphs';
+  	font-size: 1em;
+}
+#histo::before{
+	
+	content: "  ";
+  	font-family: 'Glyphs';
+  	font-size: 1em;
+}
+#aide::before{
+	
+	content: "  ";
+  	font-family: 'Glyphs';
+  	font-size: 1em;
+}
+.recherche{
+	position: absolute;
+	top: -4.7em;
+	left: 12.5%;
+	padding: 5em 0.5%;
+}
+.infos__title__elt{           /*Option sous photo principale*/
+	display: inline-block;
+	font-size: 0.85em;
+	
+}
+.infos__menu{             /*Bouton S'abonner Sous PrenomNom*/
+	padding: 0.7em 0.6em;
+	background-color: #F50000;
+	color: white;
+	width: 100%;
+	border-radius: 2px;
+	font-weight: bold;
+}
+.infos__chiffre{        /*Chiffre à coter du bouton s'abonner*/
+	color: gray;
+	padding: 0.5em 1%;
+	border: 1px solid #D8D8D8;
+}
+.infos__number{                 /* Chiffre à coter du bouton s'abonner tout a droite*/
+	color: gray;
+	padding: 0.5em 0;
+	margin-top: 1em;
+	float: right;
+	border-bottom: 3px solid #167AC6;
+}
+#ajout, #share, #option, #jaime, #jaimepas{
+	color: gray;
+	padding-left: 1.5em;
+}
+#ajout:hover, #jaime:hover, #jaimepas:hover{
+	color: #545252;
+}
+.infos__menu:hover{
+	background-color: white;
+	color: red;
+}
+.infos ul{
+	padding-bottom: 1.1em;
+}
+.infos ul+ul{
+	padding: 0.2em 0;
+	margin-top: -.3em;
+	border-top: 1px solid #D8D8D8;
+}
+.infos__droite{
+	float: right;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+#unpeuplus #experience .meca, #unpeuplus #diplome .diplome__img, #unpeuplus #passion .cerveau{  /*Images recadrés des textes*/
+	width: 51px;
+	height: 43px;
+}
+aside img{        /*Photo perso à droite*/
+	
+}
+aside{                      /*Positionnement a droite*/	
+	background-color:  #FFFFFF;
+	width: 24%;
+	position: absolute;
+    right: 12.8%;
+    top: 4em;;
+}
+#photo1{
+	border-bottom: 1px solid gray;
+}
+#experience{
+	padding-top: 1em;
+}
+#photo2{
+	padding-bottom: 1em;
+}
+.bloc__title{                 /*Texte de droite*/
+	display: inline;
+	color: #222;
+	font-weight: 500;
+	margin: 1em 5%;
+	position: absolute;
+}
+.infos__list{
+	background-color: white;
+	position: absolute;
+	top: 51em;
+	width: 7%;
+	box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.2);
+	padding: 1em;	
+}
+#menuabo{
+	display: none;
+}
+#menuabo:target{
+	display: block;
+	-webkit-animation: left 1s ease-in ; /* Safari 45+ */
+  	-moz-animation:    left 1s ease-in; /* Fx 5+ */
+  	-o-animation:      left 1s ease-in; /* Opera 4+ */
+  	animation:         left 1s ease-in; /* IE 10+, Fx 29+ */
+  	animation-fill-mode: forwards;
+}
+
+ @-moz-keyframes left{
+ 	0%{ display: block; 
+ 		opacity: 0.2;
+  	}
+  	50%{
+  		left: 2%;
+  	}
+  	100%{ 
+  		left: 4%;
+  		opacity: 1;
+  	}
+  }
+  @-webkit-keyframes left{
+ 	0%{ display: block; 
+ 		opacity: 0;
+  	}
+  	50%{
+  		left: 8%;
+  		opacity: 0.1;
+  	}
+  	100%{ 
+  		left: 4%;
+  		opacity: 1;
+  	}
+  }
+  @-o-keyframes left{
+ 	0%{ display: block; 
+ 		opacity: 0;
+  	}
+  	50%{
+  		left: 8%;
+  		opacity: 0.1;
+  	}
+  	100%{ 
+  		left: 4%;
+  		opacity: 1;
+  	}
+  }
+ @keyframes left{
+ 	0%{ display: block; 
+ 		opacity: 0;
+  	}
+  	50%{
+  		left: 8%;
+  		opacity: 0.1;
+  	}
+  	100%{ 
+  		left: 4%;
+  		opacity: 1;
+  	}
+  }
+  	
+
+
+.infos__list::after{
+	content: " ";
+	color: rgba(128, 128, 128, 1);
+	font-family: 'Glyphs';
+  	font-size: 3em;
+	position: absolute;
+	top:0em;
+	right: 0;
+}
+.infos__link{
+	color: black;
+}
+.bloc__percent{
+	display: inline;
+	color: #767676;
+	margin: 3em 5%;
+	position: absolute;
+	font-size: 1em;
+}
+.desc{
+	display: inline-block;
+	color: #767676;
+	margin: 2em 17%;
+	position: absolute;
+	font-size: 1.1em;
+}
+ aside h2{
+ 	color: #222;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    font-weight: bold;
+    padding: 1em 0 2% 1.3em;
+}
+
+footer li{                   /*Barre bas de page*/
+	display: inline-block;
+	background-color: #FFF;
+	padding-left: 1em;
+}
+footer a{
+	padding: 0.5em;
+	background-color: white;
+	color:  #7C7C7C;
+	font-size: 0.8em;
+	border: 1px solid #D3D3D3;
+	border-radius: 2px;
+	margin-top: 1em;
+	float: left;
+}
+.banner__logo{
+	height: 30px;
+	width: 72px;
+	float: left;
+	margin: 0.5em -25.5%;
+	padding-left: 29%;
+}
+.logoF{
+	margin-top: 1.2em;
+
+}
+#footer{
+	margin-left: 1%;
+}
+.infos__title{                    /*Christine Jendrzejczyk*/
+	word-wrap: break-word;
+	line-height: normal;
+	font-size: 1.4em;
+	padding: 1em 0;
+}
+#description{             /*Description en dessous photo principal*/
+	padding: 1.3em;
+}
+#description h2{
+	font-weight: bold;  /*Titre description*/
+	color: #808080;
+	margin-left: 2%;
+}
+section{                 /*Contenu de texte et img*/
+ 	background: #FFFFFF;
+	margin: 0.6em 1%;
+	padding: 0.5em 2%;
+}
+#unpeuplus h2{
+	font-weight: bold;
+	padding: 1em 2%;
+	color: #666;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border: 1px solid #D8D8D8;
+    display: inline-block;
+    box-shadow: 2px 2px 3px gray 0.5;
+ }
+ #unpeuplus h3{
+	color: #287EC6;
+	display: inline-block;
+	font-weight: bold;
+	position: relative;
+	top: -2em;
+ }
+ #unpeuplus{
+ 	margin-bottom: 2em;
+ }
+ .meca, .diplome__img, .cerveau{
+ 	height: 30px;
+    margin: 3px 2px;
+    width: 32px;
+    position: relative;
+    top: -1em;
+    right: 1%;
+ }
+ #experience li, #diplome li, #passion li{
+ 	padding: 1.2em 0;
+ }
+ .experience__nom, .diplome__papier{
+ 	margin-top: -2.7em;
+ 	margin-left: 17%;
+ 	width: 100%;
+ }
+ .user{
+ 	width: 2.7em;
+ }
+ .experience__date, .annee{
+ 	font-size: 1em;
+ 	color: gray;
+ 	float: right;
+ }
+ .experience__date{
+ 	margin-right: -52%;
+ }
+ .experience__fonction, .Lieu{
+ 	padding: 0.5em 10%;
+ 	margin-top: -0.5em;
+ 	margin-left: 7%;
+ }
+ #experience ul, #diplome ul, #passion ul{
+ 	margin: 0em 7%;
+ 	width: 48%;
+ }
+ 
+
+.banner__menu a img{
+	padding: 1em 6%;
+	width: 25%;
+	vertical-align: middle;
+}
+.banner__bouton{                     /*ENSEMBLE BOUTON CONNEXION _ EN LIGNE */
+	float: right;
+	margin-top: -1.4em;
+	margin-right: 3%;
+	width: 11%;
+
+}
+section, aside{
+	box-shadow:  1px 1px 4px rgba(128, 128, 128, 0.2);
+}
+.sousnav { 
+  position: absolute; 
+  top: 132%; 
+  width: 12em;
+  display: none; 
+  margin: -1em 0; 
+  padding: 0; 
+ background-color: white;
+}
+.title__sousnav{
+	padding: 1em;
+	margin-top: 0.7em;
+	color: red;
+	font-size: 0.8em;
+}
+.menu__list li ul li a{  /* MENU NAV */
+  display: block; 
+  font-size: 0.9em;
+  background-color: white;
+  color: black;
+  
+}
+/* drop down */
+.menu__list li:hover ul{ 
+  display: block; 
+
+}
+.menu__list li ul li a:hover{
+	background-color: #444444;
+	color: white;
+	
+}
+
+#intro{
+	margin-top: 4.8em;
+	margin-left: 2em;
+}
+.slider__img{
+	
+}
+.option{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+ /*Style deuxieme liste dans le footer*/
+.secondList__elt{
+	font-weight: bold;
+	padding-right: 1em;
+}
+.secondList{
+	margin-top: 0.5em;
+	margin-left: 1.5em;
+	border-top: 0.5px solid #7C7C7C;
+	padding-top: 0.5em;
+	width: 90%; 
+}
+.thirdList__elt{
+	font-size: 0.8em;
+	color: #606060;
+	padding-right: 1em;
+}
+.thirdList{
+	margin-left: 4.5em;
+	padding-top: 1em;
+	width: 90%; 
+	margin-bottom: 1.5em;
+}
+/*LOGO MENU*/
+
+.nav__title{
+	margin-left: -1.5em;
+	font-size: 1.6em;
+	color: transparent;
+}
+.nav__title::after{
+	content: "   ";
+	font-size: 0.7em;
+	font-family: 'Glyphs';	
+	color: #767676;
+}
+.menu__list{
+	margin-top: -1.5em;
+}
+
+
+@media (max-width: 1450px) {
+	.corps{
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	aside{
+		position: unset;
+    	margin: 0em 1%;
+    	width: 98%;
+	}
+	aside h2{
+		border: 1px solid #d8d8d8;
+    	color: #666;
+    	 font-size: 13px;
+	    font-weight: bold;
+	    padding: 10px 8px;
+    	text-transform: uppercase;
+	}
+	.banner__logo{
+		margin-left: -23%;
+	}
+	.slider__img{
+	margin-left: 0.5em;
+	margin-top: 4em;
+	}
+	#musique{
+		
+		left: 200%;
+		top: -4.5em;
+	}
+	.Isearch{
+		left:404%;
+	}
+	aside img{
+		width: 24%;
+	}
+	.experience__date{
+		margin-right: -51%;
+	}
+
+ 
+}
+@media (max-width: 1200px) {
+	.experience__date{
+		margin-right: -43%;
+	}
+	.experience__fonction, .lieu{
+		margin-left: 16%;
+		width: 100%;
+	}
+	.experience__nom, .diplome__papier{
+		margin-left: 26%;
+	}
+	.recherche{
+		margin-left: 18%;
+		width: 15%;
+	}
+	#musique{
+		left: 27%;
+	}
+	.Isearch{
+		left:222%;
+	}
+}
+@media (max-width: 688px) {
+	.bouton__online{
+		display: none;
+	}
+	.banner__logo{
+		display: none;
+	}
+	header h1:after{
+		content: "";
+		font-family: 'Glyphs';
+		font-size: 2em;
+		color: #F50000;
+	}
+	header h1 {
+    margin-left: 11%;
+}
+
+	.menu__list{
+		margin-top: -3em;
+	}
+
+	.corps{
+		min-width: 420px;
+	}
+	.description__text{
+		width: 93%;
+	}
+	.thirdList{
+		margin-left: 0;
+	}
+	aside img{
+		width: 40%;
+	}
+	.annee{
+		margin-right: -43%;
+	}
+	.experience__fonction, .Lieu{
+		margin-left: 18%;
+		width: 175%;
+	}
+	.experience__nom, .diplome__papier{
+		margin-left: 27%;
+		width: 110%;
+	}
+	.banner__menu{
+		margin-left: 10%;
+	}
+}
+@media (max-width: 480px) {
+	header h1{
+		margin-left: 7%;
+	}
+	.recherche{
+		left: 12%;
+	}
+	
+	.banner__menu{
+		margin-left: 4%;
+	}
+}

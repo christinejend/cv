@@ -1,0 +1,38 @@
+/* IMPORT de nos différents fichiers*/
+ /* BASE */
+
+ @import "tools.colors.scss";
+@import "tools.fonts.scss";
+@import "tools.mixin.scss";
+@import "tools.icons.scss";
+
+
+@import "base.body.scss";
+
+
+
+/*COMPONENTS*/
+@import "components.header.scss";
+@import "components.infos.scss";
+@import "components.secondList.scss";
+@import "components.thirdList.scss";
+@import "components.List.scss";
+@import "components.experiences.scss";
+@import "components.bloc.scss";
+@import "components.slider.scss";
+@import "components.boutonDrop.scss";
+@import "components.description.scss";
+@import "components.competences.scss";
+@import "components.banner.scss";
+@import "components.banner.bouton.co.scss";
+
+/*TOOLS*/
+
+
+/*OBJECTS*/
+@import "objects.corps.scss";
+@import "objects.footer.scss";
+@import "objects.competences.scss";
+@import "objects.contact.scss";
+
+@import "trumps.scss";

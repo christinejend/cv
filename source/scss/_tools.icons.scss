@@ -1,0 +1,148 @@
+// OPTIONS SLIDER
+
+.play:after{
+
+  content: "";
+  @include icons(1.4em);
+}
+.pause:after{
+  content:"";
+  @include icons(1.4em);
+}
+.next:after{
+  content:"";
+  @include icons(1.4em);
+}
+
+// BANNIERE HAUT
+.bouton__online::after{
+  content: " ";
+    @include icons(1.6em);
+}
+
+// OPTION DANS DESCRIPTION
+#ajout::before{
+  	content: "";
+  	@include icons(1.6em);
+}
+#ajout:active::after{
+	content: " ma liste d'employé";
+	font-family:  $fontText;
+	font-size: 1.2em;
+}
+#jaime::before{
+	content: "";
+  	@include icons(1.6em);
+}
+#jaimepas::before{
+	content: "";
+  @include icons(1.6em);
+}
+
+#share::before{
+
+	content: "  ";
+  	@include icons(1.6em);
+}
+#option::before{
+
+	content: "  ";
+  @include icons(0.7em);
+}
+
+.infos__menu::before{
+	content: "  ";
+  	@include icons(1.2em);
+}
+
+
+// FOOTER
+#fr::before{
+	content: "  ";
+  	@include icons(1.4em);
+}
+#fr::after, #pays::after, #mode::after{
+	content: "    ";
+  	@include icons(1.4em);
+}
+#histo::before{
+
+	content: "  ";
+  @include icons(1.4em);
+}
+#aide::before{
+
+	content: "  ";
+  	@include icons(1.4em);
+}
+
+// MENU CACHE DESCRIPTION
+.git:before{
+    content: "  ";
+    color: rgba(128, 128, 128, 1);
+    vertical-align: middle;
+    @include icons(2.5em);
+
+}
+.fb:before{
+  color: rgba(128, 128, 128, 1);
+  content: "  ";
+  vertical-align: middle;
+@include icons(2.5em);
+
+}
+.mail:before{
+  color: rgba(128, 128, 128, 1);
+  content: "  ";
+  vertical-align: middle;
+ @include icons(2.5em);
+
+}
+
+// ASIDE COMPETENCES
+.html::before{
+  content: " ";
+  font-family: 'Glyphs';
+}
+.css::before{
+  content: " ";
+  font-family: 'Glyphs';
+}
+.js::before{
+  content: " ";
+  font-family: 'Glyphs';
+}
+.ab::before{
+  content: " ";
+  font-family: 'Glyphs';
+}
+.ang::before{
+  content: " ";
+  font-family: 'Glyphs';
+}
+.php::before{
+  content: " ";
+  font-family: 'Glyphs';
+}
+.auto::before{
+  content: " ";
+  font-family: 'Glyphs';
+}
+
+// IMAGES TITRE DESC
+#unpeuplus #experience .meca, #unpeuplus #diplome .diplome__img, #unpeuplus #passion .cerveau{  /*Images recadrés des textes*/
+  width: 51px;
+  height: 43px;
+}
+
+.title{
+    @include contour();
+    max-width: 8%;
+    margin: 2.5em 0;
+    &:after{
+      content: "    ";
+    @include icons(1em);
+
+    }
+
+}

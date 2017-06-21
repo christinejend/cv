@@ -1,0 +1,79 @@
+.infos{
+	&__list2{
+		margin-bottom: 0.5em;
+	}
+	&__title__elt{  			/*Option sous photo principale*/
+		display: inline-block;
+		font-size: 0.80em;
+	}
+	&__list1{
+		padding: 0.2em 0;
+    	border-top: 1px solid #D8D8D8;
+	}
+	&__title{
+		word-wrap: break-word;
+	line-height: normal;
+	font-size: 1.4em;
+	padding: 0.5em 0;
+	}
+	&__menu{
+		padding: 0.5em 0.7em;
+		background-color: #F50000;
+		color: white;
+		width: 100%;
+		border-radius: 2px;
+	}
+	&__list{
+		padding-bottom: 1.1em;
+		padding: 0.2em 0;
+		border-top: 1px solid #D8D8D8;
+		background-color: white;
+		position: absolute;
+		top: 50em;
+		left: 3%;
+		width: 7%;
+		box-shadow: 1px 1px 4px rgba(128, 128, 128, 0.2);
+		padding: 1em;	
+	}
+	&__list::after{
+	content: " ";
+	color: rgba(128, 128, 128, 1);
+	font-family: 'Glyphs';
+  	font-size: 3em;
+	position: absolute;
+	top:0em;
+	right: 0;
+	}
+	&__link{
+	color: black;
+	}
+	&__droite{
+		float: right;
+		font-size: 0.9em;
+	}
+	&__menu::hover{
+		background-color: white;
+		color: red;
+	}
+	&__chiffre{
+		/*color: gray;
+		padding: 0.5em 1%;
+		border: 1px solid $border;*/
+		@include contour();
+	}
+	&__number{
+		color: gray;
+		padding: 0.2em 0;
+		float: right;
+		font-size: 1.2em;
+		border-bottom: 3px solid #167AC6;
+	}
+}
+#ajout, #share, #option, #jaime, #jaimepas{
+	color: gray;
+	padding-left: 1.5em;
+}
+#ajout:hover, #jaime:hover, #jaimepas:hover{
+	color: #545252;
+}
+

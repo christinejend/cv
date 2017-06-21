@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+body{
+	background-color: #F1F1F1;
+	font-family: "Roboto",arial,sans-serif;
+    font-size: 13px;
+    width: 100%;
+}
+header{                  /*Banière du dessus*/
+	background: red repeat scroll 0 0;
+	height: 42px;
+	border: 1px solid #e8e8e8;
+	position: fixed;
+	width: 100%
+}
+header h1{							/*Logo Youtube HautGauche*/
+	background-image: url(../img/sprite.png);
+	background-position: -647px -22px;
+	background-size: 654px 394px;
+    height: 39px;
+    width: 48px;
+    text-indent: -90000px;
+    margin-left: 34px;
+}
+#ajout{
+	background-image: url(../img/you.jpg);
+	background-position: 0px 1px;
+	background-size: 0px 1px;
+    height: 27px;
+    width: 51px;
+}
+#recherche{
+	position: absolute;
+	left: 200px;
+}
+#intro img{
+	width: 94%;
+	height: auto;
+	margin: 0 16px;
+	padding-top: 68px;
+}
+#photo li:not(#number){           /*Option sous photo principale*/
+	display: inline-block;
+	font-size: 11px;
+}
+#abo{             /*Bouton S'abonner Sous PrenomNom*/
+	padding: 5px 5px;
+	background-color: #F50000;
+	color: white;
+	border-radius: 2px;
+	font-weight: bold;
+}
+#chiffre{        /*Chiffre à coter du bouton s'abonner*/
+	color: gray;
+	padding: 5px 5px;
+	border: 1px solid #D8D8D8;
+}
+#number{                 /* Chiffre à coter du bouton s'abonner tout a droite*/
+	color: gray;
+	padding: 5px 15px;
+	font-size: 17px;
+	float: right;
+}
+#ajout, #share, #option, #jaime, #jaimepas{
+	color: gray;
+	padding-left: 30px;
+}
+#photo ul{
+	padding-bottom: 10px;
+}
+#photo ul+ul{
+	padding: 10px 5px;
+	border-top: 1px solid #D8D8D8;
+}
+.droite{
+	float: right;
+}
+.hidden{
+	display: none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+#unpeuplus #experience #meca, #unpeuplus #diplome #toge, #unpeuplus #passion #cerveau{  /*Images recadrés des textes*/
+	width: 51px;
+	height: 43px;
+}
+aside img{        /*Photo perso à droite*/
+	width: 25%;
+	height: auto;
+	margin-top: 25px;
+}
+aside{                      /*Positionnement a droite*/
+	background-color:  #FFFFFF;
+	width: 194px;
+	padding: 7px 11px;
+	border-bottom: 1px solid #e8e8e8;
+
+}
+aside div{
+	border-bottom: 1px solid #e8e8e8;
+}
+.titre{                 /*Texte de droite*/
+	display: inline;
+	color: #222;
+	margin: 22px 17px;
+	position: absolute;
+}
+.vues{
+	display: inline;
+	color: #767676;
+	margin: 61px 17px;
+	position: absolute;
+	font-size: 11px;
+}
+.desc{
+	display: inline-block;
+	color: #767676;
+	margin: 41px 17px;
+	position: absolute;
+	font-size: 11px;
+}
+ aside h2{
+ 	color: #222;
+    font-size: 13px;
+    line-height: 1.3em;
+}
+#photo h2{                    /*Christine Jendrzejczyk*/
+	word-wrap: break-word;
+	line-height: normal;
+	font-size: 20px;
+	padding: 11px 0px;
+}
+#description{             /*Description en dessous photo principal*/
+	height: 50px;
+	padding: 13px;
+}
+#description h2{
+	font-weight: bold;  /*Titre description*/
+	color: #808080;
+}
+section{                 /*Contenu de texte et img*/
+ 	background: #FFFFFF repeat scroll 0 0;
+	margin: 10px 15px;
+}
+#unpeuplus h2{
+	font-weight: bold;
+	padding: 5px 8px;
+	color: #666;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 1px solid #D8D8D8;
+    display: inline-block;
+    box-shadow: 2px 2px 3px gray 0.5;
+ }
+ #unpeuplus h3{
+	color: #287EC6;
+	display: inline-block;
+	font-weight: bold;
+	position: relative;
+	top: -16px;
+ }
+ #experience img, #diplome img{
+ 	height: 30px;
+    margin: 3px 2px;
+    width: 32px;
+ }
+ #experience li, #diplome li{
+ 	padding: 12px 0 0px;
+ }
+ .Nom, .Papier{
+ 	padding-top:  0px ;
+ }
+ .date, .annee{
+ 	font-size: 11px;
+ 	color: gray;
+ 	float: right;
+ 	margin-top: 13px;
+ }
+ .fonction, .Lieu{
+ 	padding: 5px 40px;
+ }
+ #experience ul, #diplome ul{
+ 	margin: 13px 50px;
+ 	width: 384px;
+ }
+ footer, footer img, #musique, input[value="Rechercher"], #connexion, #enligne{
+ 	visibility: hidden;
+ }
+

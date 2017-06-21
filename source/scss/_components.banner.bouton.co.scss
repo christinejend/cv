@@ -1,0 +1,28 @@
+.bouton{
+	&__co{
+		@include BanBouton(#126DB3,#126DB3);
+		}
+	&__online{
+		@include BanBouton($fond, white);
+			color:  #7C7C7C;
+			margin-right: 15%;
+	}
+}
+
+@media (max-width:610px) {
+	.banner{
+		&__bouton{
+			margin-right: unset;
+		}
+		&__form{
+			margin-left: unset;
+		}
+	}
+}
+@media (max-width:512px) {
+	.banner{
+		&__bouton{
+			margin-left: -9%;
+		}
+	}
+}

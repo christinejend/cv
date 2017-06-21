@@ -1,0 +1,12 @@
+.secondList{
+	margin-top: 0.5em;
+	margin-left: 1.5em;
+	border-top: 0.5px solid #d8d8d8;
+	padding-top: 0.5em;
+	width: 90%;
+	&__elt{
+		color: #545252;
+	font-weight: bold;
+	padding-right: 1em;
+	}
+}

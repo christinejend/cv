@@ -1,0 +1,34 @@
+@mixin BanWhite(){
+	background: white repeat scroll 0 0;
+	border: 1px solid $border;
+	z-index: 50;
+}
+
+@mixin BanBouton($colorOne, $colorTwo){
+	padding: 0.5em;
+	background-color: $colorOne;
+	color:  white;
+	border: 1px solid $colorTwo;
+	border-radius: 2px;
+	font-size: 0.8em;
+}
+
+@mixin boxe(){
+	background: white;
+	margin: 0.6em 1%;
+	padding: 0.5em 2%;
+}
+
+@mixin contour(){
+	font-weight: bold;
+    padding: 0.3em 1%;
+    color: #666;
+    //text-transform: uppercase;
+    font-size: 0.9em;
+    background-color: #F8F8F8;
+    border: 1px solid #D8D8D8;
+}
+@mixin icons($size){
+	font-family: 'Glyphs';
+  	font-size: $size;
+}

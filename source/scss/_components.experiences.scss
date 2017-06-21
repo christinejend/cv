@@ -1,0 +1,36 @@
+.experiences{
+	margin-top: 2em;
+	border-top: 1px solid #e2e2e2;
+}
+.boite{
+	display: flex;
+	margin-bottom: 2em;
+	&__img{
+		width: 50px;
+		height: 50px;
+	}
+	&__list{
+		margin-left: -4em;
+		margin-top: 4em;
+	}
+
+	&__title{
+
+		color: #128ee9;
+		font-weight: 600;
+		margin-top: 1em;
+		margin-left: 1.2em;
+	}
+}
+.user{
+	width: 35px;
+	height: 35px;
+}
+.title2, .annee, .lieu{
+	position: relative;
+    top: -3em;
+    left: 22%;
+}
+.title2{
+		color: #128ee9;
+	}

@@ -1,0 +1,14 @@
+.competences{
+	background-color:  #FFFFFF;
+	width: 31.5%;
+	&__img{
+	width: 10em;
+	}
+	&__bloc img{
+		/*height: auto;*/
+	margin-left: 5%;
+	margin-top: 1em;
+	position: relative;
+	width: 10em;
+	}
+}

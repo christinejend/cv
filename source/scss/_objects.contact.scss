@@ -1,0 +1,145 @@
+
+.contact{
+	&__title{
+		text-transform: uppercase;
+		font-weight: bold;
+    	color: #444444;
+    	margin: 1.5em 0 1.5em 0.5em;
+	}
+	&__label{
+		display: inline-block;
+		width: 35%;
+	}
+	&__input{
+		width: 23em;
+		margin-left: 3%;
+		//border: 2px solid rgb(19, 112, 184);
+		//border-bottom: 1px solid grey;
+	}
+	&__pos{
+		width: 50%;
+		margin: 0.5em;
+	}
+	&__false{
+		width: 6%;
+		height: 2em;
+		background-color:red;
+	}
+	&__nom{
+		background-color: #ec4b32;
+		color: white;
+		width: 4.8em;
+		padding:0.9em 0.45em;
+		text-align: center;
+	}
+	&__obj{
+		background-color: #ec4b32;
+		color: white;
+		width: 4.8em;
+		padding:1.7em 0.5em;
+		text-align: center;
+	}
+	&__msg{
+		//margin-left: 0.5em;
+		background-color: #ec4b32;
+		color: white;
+		width: 4.8em;
+		padding:1.7em 0.5em;
+		text-align: center;
+	}
+	&__bt{
+		background-color: #126db3;
+		color:white;
+		font-weight: 500;
+    	font-size: 0.95em;
+    	cursor: pointer;
+    	padding: 0.5em 0.8em;
+    	border-radius: 3px;
+    	margin-left: 30%;
+    	margin-top: 1em;
+    	border: none;
+    	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+	}
+}
+.textarea{
+	height: 4.5em;
+	width: 23em;
+	margin-left: 1.9%;
+}
+
+#contact__hide{
+	//display: none;
+}
+#contact__hide:target{
+	display: block;
+}
+@media (max-width:940px) {
+	.contact{
+		&__nom,&__obj{
+			max-width:5em;
+		}
+		&__msg{
+			max-width: 5em;
+		}
+	}
+	.title{
+		max-width: 6em;
+	}
+}
+@media (max-width:1287px) {
+	.contact{
+		&__pos{
+			width: 32em;
+		}
+	}
+}
+@media (max-width:1394px) {
+	.title{
+		max-width: 10%;
+	}
+}
+@media (max-width:1090px) {
+	.title{
+		max-width: 11%;
+	}
+}
+@media (max-width:978px) {
+	.title{
+		max-width: 12%;
+	}
+}
+@media (max-width:890px) {
+	.title{
+		max-width: 13%;
+	}
+}
+@media (max-width:834px) {
+	.contact{
+		&__pos{
+			width: 29em;
+		}
+	}
+	.title{
+		max-width: 14%;
+	}
+}
+@media (max-width:890px) {
+	.title{
+		max-width: 13%;
+	}
+}
+@media (max-width:770px) {
+	.title{
+		max-width: 16%;
+	}
+}
+@media (max-width:545px) {
+	.title{
+		max-width: 19%;
+	}
+}
+@media (max-width:465px) {
+	.title{
+		max-width: 23%;
+	}
+}

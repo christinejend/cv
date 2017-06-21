@@ -1,0 +1,9 @@
+.bold{
+	font-weight: 600;
+}
+.nav__title::after{
+	content: "  ";
+    font-size: 1.2em;
+    font-family: 'Glyphs';
+    color: rgb(118, 118, 118);
+}

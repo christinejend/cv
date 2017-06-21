@@ -1,0 +1,58 @@
+.banner{
+	&__bouton{
+		text-align: center;
+		margin-right: 2em;
+		margin-top: 0.3em;
+	}
+	&__menu{
+		order: -1;
+		width: 70px;
+	}
+	&__logo{
+		width: 7em;
+margin-top: -1em;
+margin-left: -1em;
+height: 5em;
+	}
+	&__form{
+		//margin-top: 0.2em;
+		flex-grow: 1;
+	margin-left: 3.8em;
+		//margin-top: -0.7em;
+	}
+}
+.Isearch{
+	background-image: url(../img/search.png);
+    background-position: 1.2em 45%;
+    background-size: 2em;
+    background-repeat: no-repeat;
+    height: 2.06em;
+    width: 5em;
+		background-color: #F0F0F0;
+		border: 1px solid #9e9e9e;
+		position: relative;
+		top: 0.55em;
+		left: -0.3em;
+}
+#musique{
+	width: 51%;
+	height: 1.7em;
+	margin-top: 0.1em;
+	font-size: 1.1em;
+	//margin-top: 0.5em;
+}
+.bouton{
+	&__co{
+		@include BanBouton(#126DB3,#126DB3);
+		}
+	&__online{
+		@include BanBouton($fond, white);
+			color:  #7C7C7C;
+	}
+}
+
+@media (max-width: 500px){
+	.banner__menu {
+    margin-left: -5%;
+	 }
+}

@@ -1,0 +1,23 @@
+.corps{         /*"centrer" tous*/
+	margin: 1em 4%;
+	width: 68.5%;
+
+}
+
+@media (max-width:1412px) {
+	.corps{
+		margin: unset;
+		margin: 0 auto;
+		margin-top: 1em;
+	}
+}
+@media (max-width: 755px){
+	.corps {
+     width: 85.5%;
+	 }
+}
+@media (max-width: 420px){
+	.corps {
+     min-width: 452px;
+	 }
+}
